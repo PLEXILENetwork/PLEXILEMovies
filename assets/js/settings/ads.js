@@ -15,7 +15,7 @@ function updateButtonStyle() {
     }
 }
 
-document.getElementById('ads-button').addEventListener('change', function () {
+document.getElementById('ads-button').addEventListener('click', function () {
     areAdsDisabled = !areAdsDisabled;
     localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));
 
