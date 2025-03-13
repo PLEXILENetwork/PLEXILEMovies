@@ -26,26 +26,33 @@ document.getElementById('ads-button').addEventListener('click', function () {
 });
 
 function enableAds() {
-  const adScriptElement = document.createElement('script');
-  adScriptElement.type = 'text/javascript';
-  adScriptElement.src = '//crockerydestructivespoken.com/02/22/9e/02229e37b98d66a6657744bf7b07c279.js';
-  adScriptElement.async = true;
-  adScriptElement.id = 'adScript';
-  document.body.appendChild(adScriptElement);
+  const adScripts = [
+    { id: 'adScript1', src: '//crockerydestructivespoken.com/02/22/9e/02229e37b98d66a6657744bf7b07c279.js' },
+    { id: 'adScript2', src: '//crockerydestructivespoken.com/f3/70/9b/f3709b7dd09eb147485a2b038066c5a3.js' }
+  ];
+
+  adScripts.forEach(({ id, src }) => {
+    if (!document.getElementById(id)) {
+      const adScriptElement = document.createElement('script');
+      adScriptElement.type = 'text/javascript';
+      adScriptElement.src = src;
+      adScriptElement.async = true;
+      adScriptElement.id = id;
+      document.body.appendChild(adScriptElement);
+    }
+  });
 }
 
 function disableAds() {
-  const adScriptElement = document.getElementById('adScript');
-  if (adScriptElement) {
+  ['adScript1', 'adScript2'].forEach(id => {
+    const adScriptElement = document.getElementById(id);
+    if (adScriptElement) {
       adScriptElement.remove();
-  }
+    }
+  });
 }
 
 function updateButtonStyle() {
   const adsButton = document.getElementById('ads-button');
-  if (areAdsDisabled) {
-      adsButton.style.backgroundColor = '#a83131';  
-  } else {
-      adsButton.style.backgroundColor = '#C93131';  
-  }
+  adsButton.style.backgroundColor = areAdsDisabled ? '#a83131' : '#C93131';
 }
