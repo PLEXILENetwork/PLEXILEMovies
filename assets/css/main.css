@@ -28,6 +28,7 @@ body {
   transform: scale(3) translate(50%, -50%);
   filter: blur(200px);
   pointer-events: none;
+  z-index: 6;
 }
 
 .particles {

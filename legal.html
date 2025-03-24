@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PLEXILE Movies - Search</title>
+    <title>PLEXILE Movies - Legal</title>
     <meta charset="UTF-8"/>
     <link rel="manifest" href="/manifest.json"/>
     <link rel="icon" type="image/png" href="/assets/images/logo.png"/>
     <link rel="shortcut icon" href="/assets/images/logo.png"/>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#412525">
     <meta name="msapplication-TileColor" content="#000000">
@@ -27,75 +28,64 @@
     <meta name="twitter:description" content="Explore the Thousands of Movies/Shows!"/>
     <meta name="twitter:image" content="/assets/images/ogimage.png"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="/assets/css/search.css" />
-  <link rel="stylesheet" href="/assets/css/navbar.css" />
-
-</head>
-
-<body>
-  <div class="navbar">
-    <a href="/" class="logo">
-      <img src="/assets/images/banner.png" alt="PLEXILE Movies" />
-    </a>
-
-    <div class="menu-container">
-      <a class="boxez">
-        <img src="/assets/images/menu.png" alt="Menu" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="/assets/css/random.css"/>
+    <link rel="stylesheet" href="/assets/css/navbar.css"/>
+    <link rel="stylesheet" href="/assets/css/legal.css"/>
+    
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/" class="logo">
+        <img src="/assets/images/banner.png" alt="PLEXILE Movies"/>
       </a>
-      <div class="dropdown-box">
-        <a href="/search.html" class="dropdown-item">
-          <i class='bx bx-search'></i>
-          <span>Search  </span>
+
+      <div class="menu-container">
+        <a class="boxez">
+          <img src="/assets/images/menu.png" alt="Menu" />
         </a>
-        <a href="/settings.html" class="dropdown-item">
-          <i class="bx bx-cog"></i>
-          <span></i>Settings</span>
-        </a>
+        <div class="dropdown-box">
+            <a href="/legal.html" class="dropdown-item">
+              <i class='bx bx-receipt'></i>
+              <span>Legal     </span>
+            </a>
+          <a href="/settings.html" class="dropdown-item">
+            <i class="bx bx-cog"></i>
+            <span></i>Settings</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <br /><br />
-  <div class="content"></div>
-</body>
+    <br/><br/>
+     <div class="content"></div>
+   </body>
 
-<div class="diagonal-glow"></div>
-<div class="particles" id="particles"></div>
+  <div class="diagonal-glow"></div>
+  <div class="particles" id="particles"></div>
 
-<h3 id="headline" onclick="toggleText()">
-  <span id="typing-text"></span>
-</h3>
+  <br>
+  <div class="container">
+    <div class="text">
+      <h2>Legal:</h2>
+      <br>
 
-<body>
-  <div id="search-container">
-    <div id="search-bar">
-      <i class="bx bx-search"></i>
-      <input type="text" placeholder="Search for Movies/Shows..." readonly />
-      <div class="hover-glow"></div>
+    <div class="button-container">
+      <a href="/tos.html" class="home-button"><i class="fa-solid fa-arrow-left"></i> Terms Of Service</a>
+      <a href="/privacypolicy.html" class="home-button"><i class="fa-solid fa-arrow-left"></i> Privacy Policy</a>
+      <a href="/dmca.html" class="home-button"><i class="fa-solid fa-arrow-left"></i> DMCA</a>
     </div>
-  </div>
 
-  <div id="overlay">
-    <div id="overlay-search-bar">
-      <i class="bx bx-search"></i>
-      <input type="text" id="overlay-search-input" class="overlay-search-bar" placeholder="Search for Movies/Shows..." />
-    </div>
-  
-    <div class="boxes-container" id="boxesContainer"></div>
+          <br><br>
+        </p>
+      </div>
+   
+</div>
+
+  <body>
     
-
-    <div id="error-box" class="error-box">
-      
-      <i class='bx bx-error error-icon'></i>   
-      <p>Error: API Key isn't working correctly, Please change it in <a href="/settings.html" id="error-link"><b>/settings.html</b></a></p>
-    </div>
-  </div>  
-
     <!-- Scripts -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1640934413378596"
-    crossorigin="anonymous"></script>
     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
     <script src="/assets/js/main.js" defer></script>
     <script src="/assets/js/loader.js" defer></script>
@@ -112,5 +102,5 @@
     <script src="/assets/js/settings/api.js" defer></script>
     <script src="/assets/js/settings/passwordprotection.js" defer></script>
     <script src="/assets/js/settings/videosources.js" defer></script>
-</body>
+  </body>
 </html>

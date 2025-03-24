@@ -4,7 +4,8 @@ body {
 
 #search-bar {
   position: relative;
-  width: 440px;
+  width: 80vw; 
+  max-width: 440px;
   height: 52px;
   background: #2e2424;
   border-radius: 8px;
@@ -55,7 +56,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
+  width: 80vw; 
+  max-width: 440px;
   height: 52px;
   background: #2e2424;
   border-radius: 8px;
@@ -110,7 +112,8 @@ body {
 
 #search-bar:hover,
 #overlay-search-bar:hover {
-  width: 500px;
+  max-width: 500px; 
+  width: min(500px, 90vw);
   background-color: #362929;
 }
 
