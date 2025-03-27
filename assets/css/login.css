@@ -20,7 +20,7 @@ h1 {
      background-color: #332222;
      border: 1px solid #412626;
      backdrop-filter: blur(12px);
-     border-radius: 13px;
+     border-radius: 12px;
      padding: 25px;
      color: #fff;
      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
@@ -37,10 +37,10 @@ h1 {
      background-color: #3c2727;
      border: 1px solid #482727;
      color: white;
-     padding: 3px 10px;
-     border-radius: 8px;
+     padding: 1px 10px;
+     border-radius: 7px;
      position: absolute;
-     top: -18px;
+     top: -17px;
      left: 50%; 
      transform: translateX(-50%); 
      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
@@ -49,6 +49,7 @@ h1 {
 }
 
  .small-box img {
+     margin-top: 2px;
      width: auto;
      height: 28px;
  }
